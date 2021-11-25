@@ -1,0 +1,33 @@
+@mixin heading_gradient {
+    background: linear-gradient(to right, #000000 1%,#f0a300 32%,#e7c647 53%,#f0a300 70%,#000000 97%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin fashion_image_section($image: '') {
+    overflow: hidden;
+    position: relative;
+
+    .image{
+        @if($image != '') {
+            background-image: url($image);
+        }
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position:top center;
+        transition: transform 0.2s cubic-bezier(0.39, 0.58, 0.57, 1);
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.4;
+    }
+}
