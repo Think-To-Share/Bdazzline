@@ -1,5 +1,5 @@
 @mixin heading_gradient {
-    background: linear-gradient(to right, #000000 1%,#f0a300 32%,#e7c647 53%,#f0a300 70%,#000000 97%);
+    background-image: linear-gradient(to right, #000000 1%,#f0a300 32%,#e7c647 53%,#f0a300 70%,#000000 97%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -29,5 +29,27 @@
         height: 100%;
         background: #000;
         opacity: 0.4;
+    }
+
+    .fontlayer{
+        position: absolute;
+        z-index: 3;
+
+        .fashion-heading{
+            color: #fff;
+            text-decoration: underline;
+            font-family: $secondary-font;
+            font-weight: 700;
+        }
+
+        .fashion-text{
+            color: #fff;
+        }
+    }
+
+    &:hover{
+        .image{
+            transform: scale(1.2);
+        }
     }
 }

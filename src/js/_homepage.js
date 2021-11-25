@@ -46,15 +46,23 @@ if (document.querySelector('.review-section')) {
 
 
 if (document.querySelector('.trend-section')) {
-    tns({
-        container: '.trend-section .slides',
-        items: 1,
-        nav: false,
-        autoplay: true,
-        controls:false,
-        autoplayTimeout:50000,
-        autoplayButtonOutput: false,
+    window.addEventListener('load', () => {
+        const leftSideHeight = document.querySelector('.trend-section .left-fashion').clientHeight
+        const slides = document.querySelectorAll('.trend-section .slides .slide')
+        
+        slides.forEach(slide => {
+            slide.querySelector('.slide-main').style.minHeight = `${leftSideHeight}px`;
+        })
+
+        tns({
+            container: '.trend-section .slides',
+            items: 1,
+            nav: true,
+            autoplay: true,
+            controls:false,
+            autoplayButtonOutput: false,
+        })
     })
 }
 
-const lightbox = GLightbox({});
+GLightbox({});
