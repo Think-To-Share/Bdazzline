@@ -13,26 +13,36 @@
     .footer-text{
         img{
             width: 76%;
+            display: flex;
+            margin: 0 auto;
+
+            @media (min-width: 768px) {
+                margin: 0;
+            }
         }
         .footertext{
             color: #040404;
             font-family: $secondary-font;
             font-weight: 400;
             font-size: 2.2em;
-            padding-left: 40px;
+            padding-left: 0;
             text-align: center;
+
            @media (min-width: 768px) {
                 text-align: left;
+                padding-left: 40px;
             }
         }
         .text{
             color: #000000;
             font-weight: 400;
             font-size: 1em;
-            padding-left: 40px;
+            padding-left: 0;
             text-align: center;
+
             @media (min-width: 768px) {
                 text-align: left;
+                padding-left: 40px;
             }
         }
         .footer-heading{

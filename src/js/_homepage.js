@@ -38,7 +38,8 @@ if (document.querySelector('.review-section')) {
             768:{
               items: 3,
               controlsText:['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
-              controls:true
+              controls:true,
+              controlsPosition: 'bottom',
             }
         }
     })
