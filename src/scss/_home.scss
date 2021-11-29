@@ -2,7 +2,11 @@
     height: 700px;
     // background-image: url(../images/slider.jpg);
     background-size: cover;
-    background-position: top center;
+    background-position:top;
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+    }
     .tns-outer{
         position: relative;
         .tns-controls{
@@ -59,6 +63,7 @@
                     .link-text{
                         width: 100%;
                         text-align: center;
+                        padding-top: 36px;
                         a{
                             color: #fff;
                             font-size: 2em;
@@ -78,7 +83,6 @@
 
 //gallery section
 .gallery-sec {
-    margin-top: 50px;
     margin-bottom: 30px;
     .section-heading{
         position: relative;
@@ -115,7 +119,7 @@
             font-weight: 400;
             font-family: $primary-font;
             color: #3a281f;
-            font-size: 2rem;
+            font-size: 1.3em;
     
         }
         
@@ -137,6 +141,10 @@
     .gallery{
         position: relative;
         box-shadow: -9px -9px #eac600;
+        margin-bottom: 40px;
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
         .gallery-img{
             width: 100%;
         }
@@ -170,14 +178,14 @@
 
 //trends section
 .trend-section {
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 30px;
     .section-heading{
         margin-bottom: 40px;
         .trend-heading{
             text-align: center;
             text-transform: uppercase;
-            padding-top: 50px;
+            padding-top: 10px;
             margin-bottom: 0;
             font-size: 2em;
             @media (min-width: 768px) {
@@ -196,7 +204,7 @@
             font-weight: 400;
             font-family: $primary-font;
             color: #3a281f;
-            font-size: 2rem;
+            font-size: 1.3em;
     
         }
     }
@@ -261,6 +269,17 @@
                     }
                 }
             }
+            a{
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+                width: 100%;
+                display: block;
+                i{
+                    vertical-align: middle;
+                }
+                
+            }
         }
 
         .right-top-fashion{
@@ -283,6 +302,14 @@
                     padding-left: 10px;
                 }
             }
+            a{
+                color: #fff;
+                text-decoration: none;
+                text-align: left;
+                width: 100%;
+                display: block;
+                padding-left: 13px;
+            }
         }
         .right-bottom-fashion{
             min-height: 280px;
@@ -302,6 +329,7 @@
                 .fashion-text{
                     padding-left: 10px;
                 }
+              
             }
         }
     }
@@ -313,44 +341,70 @@
 
 .service-section{
     .service-main{
-        // display: flex;
+        display: block;
+        @media (min-width: 768px){
+            display: flex;
+        }
+
         .image{
+            width: 80%;
+            padding: 0 10px;
+            
+            @media (min-width: 768px) {
+                width: 30%;    
+            }
             img{
-                width: 30%;
+                padding-left: 41px;
+                @media (min-width: 768px){
+                    padding-left: 0;
+                }
             }
         }
         .service-text{
             .service-top-text{
                 font-weight: 600;
-                font-size: 1.5em;
+                font-size: 1.2em;
                 color: #ffb600;
                 text-align: center;
+                letter-spacing: 3px;
+                // padding-bottom: 20px;
+                @media (min-width: 768px){
+                    font-size: 2.1em;
+                    // padding-bottom: 0;
+                }
             }
             .text{
                 color: #000000;
                 font-weight: 600;
-                font-size: 1em;
+                font-size: 0.9em;
                 text-align: center;
+                padding-bottom: 20px;
+                @media (min-width: 768px){
+                    font-size: 1em;
+                    padding-bottom: 0;
+                }
             }
         }
-    }
-    .image{
-        img{
-            width: 30%;
-        }
-    }
-    .service-second-text{
-        .service-second-heading-text{
-            font-weight: 600;
-            font-size: 1.5em;
-            color: #ffb600;
-            text-align: center;
-        }
-        .second-text{
-            color: #000000;
-            font-weight: 600;
-            font-size: 1em;
-            text-align: center;
+    
+        .service-second-text{
+            .service-second-heading-text{
+                font-weight: 600;
+                font-size: 1.2em;
+                color: #ffb600;
+                text-align: center;
+                @media (min-width: 768px){
+                    font-size: 2.1em;
+                }
+            }
+            .second-text{
+                color: #000000;
+                font-weight: 600;
+                font-size: 0.9em;
+                text-align: center;
+                @media (min-width: 768px){
+                    font-size: 1em;
+                }
+            }
         }
     }
 }
@@ -359,23 +413,56 @@
 
 //popular design section
 .popular-design-sec{
-    margin-top: 141px;
+    margin-top: 51px;
+    .nav-tabs{
+        border-bottom: 0;
+        .nav-item{
+            .nav-link{
+                color: #ffa300;
+                letter-spacing: 2px;
+                font-weight: 600;
+                border: none;
+                &.active{
+                    text-decoration: underline;
+                    color: #020202;
+                    border: none;
+                }
+             &:hover{
+                 border: none;
+             }
+                
+            }
+        }
+    }
     .popular-design{
         padding: 77px 0;
         padding-bottom: 0;
         .popular-design-heading{
             font-weight: 400;
-            font-size: 5em; 
+            font-size: 2em; 
             @include heading_gradient;
-            font-family: $secondary-font;  
+            text-align: center;
+            font-family: $secondary-font; 
+            @media (min-width: 768px) {
+            font-size: 4em;
+            text-align: left;
+            } 
         }
         .popular-design-text{
             color: #a28774;
             font-weight: 400;
             font-size: 1.2em;
+            text-align: center;
+            @media (min-width: 768px) {
+                text-align: left;
+            }
         }
     .btn-container{
         margin: 32px 20px;
+        text-align: center;
+        @media (min-width: 768px) {
+            text-align: left;
+        }
         .btn{
             color: #fdba00;
             border-style:solid;
@@ -417,6 +504,9 @@
 .styling-sec {
     margin-top: 96px;
     margin-bottom: 107px;
+    @media (min-width: 768px){
+        margin-bottom:50px ;
+    }
     .section-heading{
         position: relative;
         margin-bottom: 40px;
@@ -424,13 +514,14 @@
             text-align: center;
             text-transform: uppercase;
             padding-top: 50px;
-            margin-bottom: 90px;
-            font-size: 2em;
+            // margin-bottom: 90px;
+            font-size: 1em;
             font-family: $secondary-font;
             @media (min-width: 768px) {
                 font-size: 3rem;
                 font-weight: 700;
                 font-family: $secondary-font;
+                margin-bottom: 90px;
             }
             span {
                 @include heading_gradient;
@@ -452,6 +543,10 @@
     }
     .styling{
         box-shadow:9px 9px #ffb200;
+        margin-bottom:50px;
+        @media (min-width: 768px){
+            margin-bottom:0 ;
+        }
     }
 }
 //end styling section
@@ -464,6 +559,10 @@
     background-position: bottom center;
     height: 264px;
     margin-bottom: 85px;
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+    }
     .subscribe-heading-text{
         .heading{
             font-family: $secondary-font;
@@ -496,6 +595,9 @@
                 float: left;
                 width: 42%;
                 padding:5px 25px; 
+                &:focus{
+                    outline: none;
+                }
                 &::placeholder{
                     color:#0c0a00;
                     font-style: italic;
@@ -539,6 +641,10 @@
 //review section
 .review-section{
     margin-bottom: 87px;
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+    }
     .tns-outer{
         position: relative;
         .tns-controls{

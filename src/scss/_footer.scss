@@ -20,12 +20,20 @@
             font-weight: 400;
             font-size: 2.2em;
             padding-left: 40px;
+            text-align: center;
+           @media (min-width: 768px) {
+                text-align: left;
+            }
         }
         .text{
             color: #000000;
             font-weight: 400;
             font-size: 1em;
             padding-left: 40px;
+            text-align: center;
+            @media (min-width: 768px) {
+                text-align: left;
+            }
         }
         .footer-heading{
             color: #010101;
@@ -66,22 +74,27 @@
         .social-media-footer{
             .footer-menuicon{
                 list-style-type: none;
+                display: flex;
                 li{
+                    text-align: center;
+                    @media(min-width:768px){
+                        text-align: left;
+                        display: flex;
+                    }
                     padding:0 5px;
-                   a{
-                    color: #000;
-                    font-size: 1.5em;
-                   }
-                    
+                    a{
+                        color: #000;
+                        font-size: 1.5em;
+                    }     
                 }
-                text-align: center;
-                @media(min-width:768px){
-                    text-align: left;
-                    display: flex;
-                }
+               
             } 
         }
         .footer-bottom-menu{
+            display: none;
+                @media (min-width: 768px) {
+                    display: block;
+                }
             ul{
                 list-style-type: none;
                 text-align: center;
