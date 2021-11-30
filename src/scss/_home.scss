@@ -572,10 +572,23 @@
     .styling{
         box-shadow:9px 9px #ffb200;
         margin-bottom:50px;
+        overflow: hidden;
         @media (min-width: 768px){
             margin-bottom:0 ;
+        
         }
+        img{
+            transition: transform .3s ease-in-out;
+        }
+        &:hover{
+            img{
+                transform: scale(0.9);
+             
+            }
+        }
+       
     }
+  
 }
 //end styling section
 
