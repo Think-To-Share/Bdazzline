@@ -12,7 +12,6 @@ if (document.querySelector('.hero-section')) {
         controls:false,
         autoplayTimeout:50000,
         autoplayButtonOutput: false,
-        controlsText:['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
         responsive: {
             768:{
               items: 1,
@@ -33,7 +32,6 @@ if (document.querySelector('.review-section')) {
         controls:false,
         autoplayTimeout:50000,
         autoplayButtonOutput: false,
-        controlsText:['<i class="fas fa-chevron-left"></i>' ,'<i class="fas fa-chevron-right"></i>'],
         responsive: {
             768:{
               items: 3,

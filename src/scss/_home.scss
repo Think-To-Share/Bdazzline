@@ -3,10 +3,9 @@
     // background-image: url(../images/slider.jpg);
     background-size: cover;
     background-position:top;
-    display: none;
-    @media (min-width: 768px) {
-        display: block;
-    }
+    // @media (min-width: 768px) {
+    //     display: block;
+    // }
     .tns-outer{
         position: relative;
         .tns-controls{
@@ -40,25 +39,42 @@
                     align-items: center; 
                     height: 700px;
                 .hero-text{ 
-                    padding: 200px 0;
+                    padding: 253px 0;
+                    padding-bottom: 0;
+                    text-align: center;
+                    @media (min-width: 992px) {
+                        padding: 200px 0;
+                        text-align: left;
+                    }
                     p{
-                    padding-left: 185px;
+                    // padding-left: 185px;
                     font-weight: 300;
                     font-style: italic;
                     color: #ffffff;
-                    font-size: 3em;
+                    font-size: 2em;
+                        @media (min-width: 992px) {
+                            padding-left: 185px;
+                            font-size: 3em;
+                        }
                     }
                     .hero-heading{
-                        padding-left: 175px;
-                        font-weight: 700;
+                        padding-left: 0;
                         // font-style: italic;
-                        color: #ffffff;
-                        font-size: 7em; 
-                        background: linear-gradient(to right, #ffba02 6%,#e5ce5d 32%,#fcefb0 63%,#ec9601 84%);
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        font-family: $secondary-font;
-
+                        color: #ffffff; 
+                        @media (min-width: 992px) {
+                            padding-left: 175px;
+                        }
+                         span{
+                            background: linear-gradient(to right, #ffba02 6%,#e5ce5d 32%,#fcefb0 63%,#ec9601 84%);
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            font-family: $secondary-font;
+                            font-weight: 700;
+                            font-size: 2em;
+                            @media (min-width: 992px) {
+                                font-size: 3em;
+                           }
+                        }
                     }
                     .link-text{
                         width: 100%;
@@ -351,6 +367,7 @@
 // service section start
 
 .service-section{
+    padding-top: 60px;
     .service-main{
         display: block;
         @media (min-width: 768px){
@@ -369,6 +386,7 @@
         }
         .service-text{
             .service-top-text{
+               
                 font-weight: 600;
                 font-size: 1.2em;
                 color: #ffb600;
@@ -377,6 +395,7 @@
                 // padding-bottom: 20px;
                 @media (min-width: 768px){
                     font-size: 2.1em;
+                   
                     // padding-bottom: 0;
                 }
             }
@@ -462,6 +481,7 @@
             text-align: center;
             @media (min-width: 768px) {
                 text-align: left;
+                font-size: 1.5em;
             }
         }
     .btn-container{
@@ -522,20 +542,21 @@
             text-transform: uppercase;
             padding-top: 50px;
             // margin-bottom: 90px;
-            font-size: 1em;
             font-family: $secondary-font;
-            @media (min-width: 768px) {
-                font-size: 3rem;
-                font-weight: 700;
-                font-family: $secondary-font;
-                margin-bottom: 90px;
-            }
             span {
                 @include heading_gradient;
                 font-weight: 700;
                 font-family: $secondary-font;
-                font-size: 3rem;
+                font-size: 2rem;
+                @media (min-width: 768px) {
+                    font-size: 3rem;
+                    font-weight: 700;
+                    font-family: $secondary-font;
+                    margin-bottom: 90px;
+                }
             }
+           
+            
         }
         .styling-heading-text {
             text-align: center;
@@ -564,35 +585,46 @@
     background-image: url(../images/subscribe_background.jpg);
     background-size: cover;
     background-position: bottom center;
-    height: 264px;
+    height: 350px;
     margin-bottom: 85px;
-    display: none;
     @media (min-width: 768px) {
-        display: block;
+        height: 264px;
     }
     .subscribe-heading-text{
         .heading{
             font-family: $secondary-font;
             font-weight: 400;
-            font-size: 4em;
+            font-size: 2em;
             color: #060606;
             text-align: center;
             margin: 33px 0;
             margin-bottom: 0;
-            letter-spacing: 13px;
+            letter-spacing: 7px;
+            @media (min-width: 768px) {
+                font-size: 4em;
+                letter-spacing: 13px;
+            }
         }
         .text{
             color: #7f712c;
             text-align: center;
             font-family: $secondary-font;
             font-weight: 400;
-            font-size: 1em;
-            letter-spacing: 2px;
+            font-size: 0.8em;
+            letter-spacing: 1px;
             margin-bottom: 30px;
+            @media (min-width: 768px) {
+                font-size: 1em;
+                letter-spacing: 2px;
+            }
         }
         form{
             // text-align: center;
-            padding-left: 423px;
+            padding-left: 0;
+            @media (min-width: 768px) {
+                padding-left: 423px;
+            }
+           
             input{
                 // border-top: 5px solid #686868;
                 // border-bottom: 1px solid #fff;
@@ -600,8 +632,11 @@
                 // border-right: 2px solid #dcdcdc;
                 border: none;
                 float: left;
-                width: 42%;
+                width: 100%;
                 padding:5px 25px; 
+                @media (min-width: 768px) {
+                    width: 42%;
+                }
                 &:focus{
                     outline: none;
                 }
@@ -609,23 +644,32 @@
                     color:#0c0a00;
                     font-style: italic;
                     font-weight: 300;
-                    font-size: 1.2em;
-                    letter-spacing: 4px;
+                    font-size: 0.8em;
+                    letter-spacing: 2px;
+                    @media (min-width: 768px) {
+                        font-size: 1.2em;
+                        letter-spacing: 4px;
+                    }
                 }
             }
             button{
                 // float: left;
-                width: 15%;
+                width: 100%;
                 // padding: 10px;
                 background: #fce685;
                 color: #0c0a00;
-                font-size: 17px;
+                font-size: 13px;
                 border: none;
-                padding: 5px 19px;
-                // border-left: none;
-                // cursor: pointer;
+                padding: 7px 0;
                 display: inline-block;
                 font-weight: 800;
+                margin-top: 10px;
+                @media (min-width: 768px) {
+                    padding: 5px 19px;
+                    font-size: 17px;
+                    width: 15%;
+                    margin-top: 0;
+                }
                 &:hover{
                     opacity: 0.8;
                 }
@@ -635,9 +679,12 @@
             margin-top: 25px;
             color: #fffae9;
             font-weight: 800;
-            font-size: 0.9em;
+            font-size: 0.8em;
             text-align: center;
             letter-spacing: 1px;
+            @media (min-width: 768px) {
+                font-size: 0.9em;
+            }
         }
        
     }
@@ -706,12 +753,15 @@
     .review-heading{
         text-align: center;
         padding-bottom: 40px;
-        font-size: 4em;
-
+      
         span {
             @include heading_gradient;
             font-family: $secondary-font;
             font-weight: 700;
+            font-size: 2em;
+            @media (min-width: 768px){
+                font-size: 2em; 
+            }
         }
         
     }
@@ -731,6 +781,7 @@
                     font-weight: 600;
                     font-size: 1em;
                     text-align: center;
+                    line-height: 39px;
                 }
                 .name{
                     color: #ffae00;

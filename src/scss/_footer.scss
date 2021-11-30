@@ -85,6 +85,8 @@
             .footer-menuicon{
                 list-style-type: none;
                 display: flex;
+                padding: 0;
+                margin: 0;
                 li{
                     text-align: center;
                     @media(min-width:768px){
@@ -102,12 +104,14 @@
         }
         .footer-bottom-menu{
             display: none;
-                @media (min-width: 768px) {
+                @media (min-width: 992px) {
                     display: block;
                 }
             ul{
                 list-style-type: none;
                 text-align: center;
+                padding: 0;
+                margin: 0;
                 @media(min-width:768px){
                     text-align: left;
                     display: flex;
@@ -117,7 +121,7 @@
                     position: relative;
                     a{
                         text-decoration: none;
-                        color: #655d46;
+                        color: #100f0d;
                         font-size: 1em;
                         font-weight: 500;
                     }
