@@ -485,25 +485,23 @@
             }
         }
     .btn-container{
-        margin: 32px 20px;
+        margin: 32px 0;
         text-align: center;
         @media (min-width: 768px) {
             text-align: left;
         }
-        .btn{
-            color: #fdba00;
-            border-style:solid;
-            border-width:2px 2px;
-            border-color:#353535;
-            width: 200px;
-            height: 55px;
-            padding: 12px 10px;
-            font-size: 1.2em;
-            font-weight: 600;
-            transition: transform .2s;
-                &:hover{
-                    transform: scale(1.5); 
-                }
+        .button{
+            // color: #fdba00;
+            // border-style:solid;
+            // border-width:2px 2px;
+            // border-color:#353535;
+            // width: 200px;
+            // height: 55px;
+            // padding: 12px 10px;
+            // font-size: 1.2em;
+            // font-weight: 600;
+            // transition: transform .2s;
+            @include button(#fdba00,#fff);
             }
         }
     }
