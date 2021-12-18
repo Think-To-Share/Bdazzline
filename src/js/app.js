@@ -1,6 +1,6 @@
-// import * as WOW from 'wowjs'
+import { WOW } from 'wowjs/dist/wow'
 require('bootstrap')
-// require('wowjs');
 
-// new WOW().init();
+new WOW().init()
+
 require('./_homepage')

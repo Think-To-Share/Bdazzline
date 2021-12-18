@@ -2,7 +2,6 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const WebpackBar = require('webpackbar');
-const {webpack} = require('webpack')
 
 module.exports = (_env, options) => {
     const isProduction = options.mode !== 'development';
@@ -59,9 +58,6 @@ module.exports = (_env, options) => {
             new MiniCssExtractPlugin({
                 filename: 'css/app.css'
             }),
-            // new webpack.ProvidePlugin({
-            //     WOW: 'wowjs',
-            // })
         ],
 
         optimization: {
