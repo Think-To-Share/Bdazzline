@@ -231,12 +231,12 @@
         --grid-gap: 15px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: "left" "rightTop" "rightBottom";
+        grid-template-areas: "left" "rightTop" "rightBottom" "rightTopRight" "rightBottomRight";
         gap: var(--grid-gap);
 
         @media (min-width: 576px) {
             grid-template-columns: 1fr 1fr;
-            grid-template-areas: "left left" "rightTop rightBottom";
+            grid-template-areas: "left left" "rightTop rightBottom" "rightTopRight rightBottomRight";
         }
         
         @media (min-width: 768px) {
