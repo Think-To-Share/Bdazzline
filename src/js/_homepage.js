@@ -46,13 +46,6 @@ if (document.querySelector('.review-section')) {
 
 if (document.querySelector('.trend-section')) {
     window.addEventListener('load', () => {
-        const leftSideHeight = document.querySelector('.trend-section .left-fashion').clientHeight
-        const slides = document.querySelectorAll('.trend-section .slides .slide')
-        
-        slides.forEach(slide => {
-            slide.querySelector('.slide-main').style.minHeight = `${leftSideHeight}px`;
-        })
-
         tns({
             container: '.trend-section .slides',
             items: 1,
@@ -61,72 +54,44 @@ if (document.querySelector('.trend-section')) {
             controls:false,
             autoplayButtonOutput: false,
         })
-        // tns({
-        //     container: '.trend-section .slides2',
-        //     items: 1,
-        //     nav: true,
-        //     autoplay: true,
-        //     controls:false,
-        //     autoplayButtonOutput: false,
-        // })
+
+        tns({
+            container: '.trend-section .right-top-fashion .slides',
+            items: 1,
+            nav: true,
+            autoplay: true,
+            controls:false,
+            autoplayButtonOutput: false,
+        })
+
+        tns({
+            container: '.trend-section .right-bottom-fashion .slides',
+            items: 1,
+            nav: true,
+            autoplay: true,
+            controls:false,
+            autoplayButtonOutput: false,
+        })
+
+        tns({
+            container: '.trend-section .right-top-right-fashion .slides',
+            items: 1,
+            nav: true,
+            autoplay: true,
+            controls:false,
+            autoplayButtonOutput: false,
+        })
+
+        tns({
+            container: '.trend-section .right-bottom-right-fashion .slides',
+            items: 1,
+            nav: true,
+            autoplay: true,
+            controls:false,
+            autoplayButtonOutput: false,
+        })
     })
    
-}
-
-if (document.querySelector('.trend-section')) {
-    window.addEventListener('load', () => {
-        const leftSideHeight = document.querySelector('.trend-section .right-top-fashion').clientHeight
-        const slides = document.querySelectorAll('.trend-section .slides2 .slide')
-        
-        slides.forEach(slide => {
-            slide.querySelector('.slide-main').style.minHeight = `${leftSideHeight}px`;
-        })
-
-        tns({
-            container: '.trend-section .slides2',
-            items: 1,
-            nav: true,
-            autoplay: true,
-            controls:false,
-            autoplayButtonOutput: false,
-        })
-        // tns({
-        //     container: '.trend-section .slides2',
-        //     items: 1,
-        //     nav: true,
-        //     autoplay: true,
-        //     controls:false,
-        //     autoplayButtonOutput: false,
-        // })
-    })
-}
-
-if (document.querySelector('.trend-section')) {
-    window.addEventListener('load', () => {
-        const leftSideHeight = document.querySelector('.trend-section .right-bottom-fashion').clientHeight
-        const slides = document.querySelectorAll('.trend-section .slides3 .slide')
-        
-        slides.forEach(slide => {
-            slide.querySelector('.slide-main').style.minHeight = `${leftSideHeight}px`;
-        })
-
-        tns({
-            container: '.trend-section .slides3',
-            items: 1,
-            nav: true,
-            autoplay: true,
-            controls:false,
-            autoplayButtonOutput: false,
-        })
-        // tns({
-        //     container: '.trend-section .slides2',
-        //     items: 1,
-        //     nav: true,
-        //     autoplay: true,
-        //     controls:false,
-        //     autoplayButtonOutput: false,
-        // })
-    })
 }
 
 // GLightbox({});
