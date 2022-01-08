@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test</title>
+        <link rel="stylesheet" href="./dist/css/app.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="page-header">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="logo-side">
+                        <img
+                            src="./src/images/logo.png"
+                            alt="Site Logo"
+                            class="logo"
+                            />
+                    </div>
+                    <div class="menu-side">
+                        <ul>
+                            <li>
+                                <a href="#">HOME</a>
+                            </li>
+                            <li>
+                                <a href="#">GIFTS</a>
+                            </li>
+                            <li>
+                                <a href="#">TYPE</a>
+                            </li>
+                            <li>
+                                <a href="#">ABOUT US</a>
+                            </li>
+                            <li>
+                                <a href="#">COLLECTIONS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-icon">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="openSearch(event)"><i class="fas fa-search"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </header>
+        
+        <!-- Hero Section -->
+        <section class="instagram-page">
+            <div class="img-bg" style="background-image: url(./src/images/slider.jpg);">
+                <h1 class="hero-heading">BDazzling Instagram Shop</h1>
+            </div>
+        </section>  
+        <!-- end Hero Section -->
+
+         <!-- start styling section -->
+         <section class="styling-sec">
+            <div class="container">
+                <div class="row justify-content-center gy-sm-4 gx-sm-4">
+                <div class="col-5 col-md-3">
+                    <div class="styling">
+                        <img src="./src/images/design1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-5 col-md-3">
+                    <div class="styling">
+                        <img src="./src/images/design1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-5 col-md-3">
+                    <div class="styling">
+                        <img src="./src/images/design1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-5 col-md-3">
+                    <div class="styling">
+                        <img src="./src/images/design1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-5 col-md-3">
+                    <div class="styling">
+                        <img src="./src/images/design1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-5 col-md-3">
+                    <div class="styling">
+                        <img src="./src/images/design1.jpg" alt=" " class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-5 col-md-3">
+                    <div class="styling">
+                        <img src="./src/images/design1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-5 col-md-3">
+                    <div class="styling">
+                        <img src="./src/images/design1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end styling section -->
+
+        <!-- Footer-section -->
+        <footer class="footer-sec">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4">
+                        <div class="footer-text">
+                            <img src="./src/images/bnw no grad 1.png" alt="">
+                            <ul>
+                                <h3 class="footertext">Join our <br>
+                                    mailing list
+                                </h3>
+                                <p class="text">
+                                    Sign up for diamond news,<br>
+                                    inspiration, and specials.
+                                </p>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="footer-text">
+                            <h4 class="footer-heading">Information</h4>
+                            <ul>
+                                <li><a href="#">Search</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">FAQ </a></li>
+                                <li><a href="#">Payment Options</a></li>
+                                <li><a href="#">Wholesale</a></li>
+                                <li><a href="#">What Our Customers Say</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <div class="footer-text">
+                            <h4 class="footer-heading">Policies</h4>
+                            <ul>
+                                <li><a href="#">Shipping Policy</a></li>
+                                <li><a href="#">Return Policy</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Disclaimer</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="footer-text">
+                            <h4 class="footer-heading">Account Information</h4>
+                            <ul>
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Sign Up</a> </li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Track Your Order</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                <li><a href="#">Need Help? Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <div class="social-media-footer">
+                            <ul class="footer-menuicon">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- <div class="footer-bottom-menu">
+                            <ul class="d-flex justify-content-between">
+                                <li><a href="#">Press </a></li>
+                                <li><a href="#"> Imitation professional </a> </li>
+                                <li><a href="#">Terms of services </a></li>
+                                <li><a href="#">Track Your Order</a></li>
+                                <li><a href="#"> Privacxcy policy  </a></li>
+                                <li><a href="#">Excersize my rights</a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer-section -->
+        <!-- copyright section -->
+        <section class="copy-right">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <p class="copyright-text">
+                            Copy right @ <a href="https://thinktoshare.com/">Think To Share</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end copyright section -->
+        
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+            <div class="overlay-content">
+              <form action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+          
+        <script src="./dist/js/app.js" defer></script>
+        <script>
+            function openSearch(ev) {
+        ev.preventDefault();
+        document.getElementById("myOverlay").style.display = "block";
+      }
+      
+      function closeSearch() {
+        document.getElementById("myOverlay").style.display = "none";
+      }
+        </script>
+    </body>
+</html>

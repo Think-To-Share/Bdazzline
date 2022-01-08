@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     padding-top:20px;
     padding-bottom: 30px;
-    .footer-text{
+    .widget-container{
         img{
             width: 76%;
             display: flex;
@@ -45,7 +45,7 @@
                 padding-left: 40px;
             }
         }
-        .footer-heading{
+        .widget-heading{
             color: #010101;
             padding-bottom: 18px;
             font-size: 1em;
@@ -79,9 +79,10 @@
                 }
                
             }
+            
           
         }
-        .social-media-footer{
+        .widget-content{
             .footer-menuicon{
                 list-style-type: none;
                 display: flex;

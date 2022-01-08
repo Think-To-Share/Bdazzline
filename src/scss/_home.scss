@@ -37,7 +37,7 @@
             background-position: top center;
                 .slide-main{
                     align-items: center; 
-                    height: 700px;
+                    height:639px;
                 .hero-text{ 
                     padding: 253px 0;
                     padding-bottom: 0;
@@ -79,7 +79,7 @@
                     .link-text{
                         width: 100%;
                         text-align: center;
-                        padding-top: 36px;
+                        // padding-top: 36px;
                         a{
                             color: #fff;
                             font-size: 2em;
@@ -141,8 +141,11 @@
         
     }
     .btn-container{
-        margin: 50px 0;  
+        margin: 2px 0;  
         text-align: center;
+        @media (min-width: 768px){
+            margin: 50px 0;  
+        }
         a{
             text-decoration: none;
             color: #020202;
@@ -194,8 +197,8 @@
 
 //trends section
 .trend-section {
-    margin-top: 40px;
-    margin-bottom: 30px;
+    // margin-top: 40px;
+    margin-bottom: 80px;
     .section-heading{
         margin-bottom: 40px;
         .trend-heading{
@@ -309,54 +312,370 @@
             }
         }
 
-        .right-top-fashion{
-            background-color: aqua;
-            min-height: 280px;
-            grid-area: rightTop;
-            @include fashion_image_section('../images/fashion2.jpg');
+        .right-top-left-fashion{
+            // background-color: aqua;
+            // min-height: 280px;
+            // grid-area: rightTop;
+            // @include fashion_image_section('../images/fashion2.jpg');
             
-            .fontlayer{
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
+            // .fontlayer{
+            //     top: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 100%;
 
-                .fashion-heading{
-                    padding:84px 10px;
-                    padding-bottom: 0;
+            //     .fashion-heading{
+            //         padding:84px 10px;
+            //         padding-bottom: 0;
+            //     }
+            //     .fashion-text{
+            //         padding-left: 10px;
+            //     }
+            // }
+            // a{
+            //     color: #fff;
+            //     text-decoration: none;
+            //     text-align: left;
+            //     width: 100%;
+            //     display: block;
+            //     padding-left: 13px;
+            // }
+            grid-area: rightTopLeft;
+            min-height: 280px;
+
+            .slides2 {
+                .slide {
+                    .slide-main {
+                        @include fashion_image_section;
+
+                        .fontlayer {
+                            bottom: 30px;
+                            right: 15px;
+                        }
+                    }
                 }
-                .fashion-text{
-                    padding-left: 10px;
+            }
+
+            .tns-outer {
+                position: relative;
+
+                .tns-nav {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 10px;
+                    transform: translateX(-50%);
+                    text-align: center;
+                    z-index: 5;
+
+                    button {
+                        background: transparent;
+                        border: 1px solid #fff;
+                        box-shadow: none;
+                        outline: none;
+                        padding: 5px;
+                        margin: 0 3px;
+                        border-radius: 50%;
+                        transition: all 0.12s ease-in-out;
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        &.tns-nav-active {
+                            background: #fff;
+                        }
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
                 }
             }
             a{
                 color: #fff;
                 text-decoration: none;
-                text-align: left;
+                text-align: center;
                 width: 100%;
                 display: block;
-                padding-left: 13px;
+                i{
+                    vertical-align: middle;
+                }
+                
+            }
+        }
+        .right-top-right-fashion{
+            // background-color: aqua;
+            // min-height: 280px;
+            // grid-area: rightTop;
+            // @include fashion_image_section('../images/fashion2.jpg');
+            
+            // .fontlayer{
+            //     top: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 100%;
+
+            //     .fashion-heading{
+            //         padding:84px 10px;
+            //         padding-bottom: 0;
+            //     }
+            //     .fashion-text{
+            //         padding-left: 10px;
+            //     }
+            // }
+            // a{
+            //     color: #fff;
+            //     text-decoration: none;
+            //     text-align: left;
+            //     width: 100%;
+            //     display: block;
+            //     padding-left: 13px;
+            // }
+            grid-area: rightTopRight;
+            min-height: 280px;
+
+            .slides3 {
+                .slide {
+                    .slide-main {
+                        @include fashion_image_section;
+
+                        .fontlayer {
+                            bottom: 30px;
+                            right: 15px;
+                        }
+                    }
+                }
+            }
+
+            .tns-outer {
+                position: relative;
+
+                .tns-nav {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 10px;
+                    transform: translateX(-50%);
+                    text-align: center;
+                    z-index: 5;
+
+                    button {
+                        background: transparent;
+                        border: 1px solid #fff;
+                        box-shadow: none;
+                        outline: none;
+                        padding: 5px;
+                        margin: 0 3px;
+                        border-radius: 50%;
+                        transition: all 0.12s ease-in-out;
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        &.tns-nav-active {
+                            background: #fff;
+                        }
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+                width: 100%;
+                display: block;
+                i{
+                    vertical-align: middle;
+                }
+                
             }
         }
         .right-bottom-fashion{
-            min-height: 280px;
-            grid-area: rightBottom;
-            @include fashion_image_section('../images/fashion3.jpg');
+            // min-height: 280px;
+            // grid-area: rightBottom;
+            // @include fashion_image_section('../images/fashion3.jpg');
 
-            .fontlayer{
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
+            // .fontlayer{
+            //     top: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 100%;
 
-                .fashion-heading{
-                    padding:84px 10px;
-                    padding-bottom: 0;
-                }
-                .fashion-text{
-                    padding-left: 10px;
-                }
+            //     .fashion-heading{
+            //         padding:84px 10px;
+            //         padding-bottom: 0;
+            //     }
+            //     .fashion-text{
+            //         padding-left: 10px;
+            //     }
               
+            // }
+
+            grid-area: rightBottomleft;
+            min-height: 280px;
+
+            .slides4 {
+                .slide {
+                    .slide-main {
+                        @include fashion_image_section;
+
+                        .fontlayer {
+                            bottom: 30px;
+                            right: 15px;
+                        }
+                    }
+                }
+            }
+
+            .tns-outer {
+                position: relative;
+
+                .tns-nav {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 10px;
+                    transform: translateX(-50%);
+                    text-align: center;
+                    z-index: 5;
+
+                    button {
+                        background: transparent;
+                        border: 1px solid #fff;
+                        box-shadow: none;
+                        outline: none;
+                        padding: 5px;
+                        margin: 0 3px;
+                        border-radius: 50%;
+                        transition: all 0.12s ease-in-out;
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        &.tns-nav-active {
+                            background: #fff;
+                        }
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+                width: 100%;
+                display: block;
+                i{
+                    vertical-align: middle;
+                }
+                
+            }
+        }
+        .right-bottom-fashion{
+            // min-height: 280px;
+            // grid-area: rightBottom;
+            // @include fashion_image_section('../images/fashion3.jpg');
+
+            // .fontlayer{
+            //     top: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 100%;
+
+            //     .fashion-heading{
+            //         padding:84px 10px;
+            //         padding-bottom: 0;
+            //     }
+            //     .fashion-text{
+            //         padding-left: 10px;
+            //     }
+              
+            // }
+
+            grid-area: rightBottomright;
+            min-height: 280px;
+
+            .slides5 {
+                .slide {
+                    .slide-main {
+                        @include fashion_image_section;
+
+                        .fontlayer {
+                            bottom: 30px;
+                            right: 15px;
+                        }
+                    }
+                }
+            }
+
+            .tns-outer {
+                position: relative;
+
+                .tns-nav {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 10px;
+                    transform: translateX(-50%);
+                    text-align: center;
+                    z-index: 5;
+
+                    button {
+                        background: transparent;
+                        border: 1px solid #fff;
+                        box-shadow: none;
+                        outline: none;
+                        padding: 5px;
+                        margin: 0 3px;
+                        border-radius: 50%;
+                        transition: all 0.12s ease-in-out;
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        &.tns-nav-active {
+                            background: #fff;
+                        }
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+                width: 100%;
+                display: block;
+                i{
+                    vertical-align: middle;
+                }
+                
             }
         }
     }
@@ -367,7 +686,8 @@
 // service section start
 
 .service-section{
-    padding-top: 60px;
+    // padding-top: 60px;
+    margin-top: 100px;
     .service-main{
         display: block;
         @media (min-width: 768px){
@@ -490,7 +810,7 @@
         @media (min-width: 768px) {
             text-align: left;
         }
-        .button{
+        .bz-button{
             // color: #fdba00;
             // border-style:solid;
             // border-width:2px 2px;
@@ -568,22 +888,22 @@
         
     }
     .styling{
-        box-shadow:9px 9px #ffb200;
+        // box-shadow:9px 9px #ffb200;
         margin-bottom:50px;
         overflow: hidden;
         @media (min-width: 768px){
             margin-bottom:0 ;
         
         }
-        img{
-            transition: transform .3s ease-in-out;
-        }
-        &:hover{
-            img{
-                transform: scale(0.9);
+        // img{
+        //     transition: transform .3s ease-in-out;
+        // }
+        // &:hover{
+        //     img{
+        //         transform: scale(0.9);
              
-            }
-        }
+        //     }
+        // }
        
     }
   
@@ -596,10 +916,10 @@
     background-image: url(../images/subscribe_background.jpg);
     background-size: cover;
     background-position: bottom center;
-    height: 350px;
-    margin-bottom: 85px;
-    @media (min-width: 768px) {
-        height: 264px;
+    height: 360px;
+    // margin-bottom: 85px;
+    @media (min-width: 992px) {
+        height: 326px;
     }
     .subscribe-heading-text{
         .heading{
@@ -632,7 +952,7 @@
         form{
             // text-align: center;
             padding-left: 0;
-            @media (min-width: 768px) {
+            @media (min-width: 1200px) {
                 padding-left: 423px;
             }
            
@@ -646,6 +966,9 @@
                 width: 100%;
                 padding:5px 25px; 
                 @media (min-width: 768px) {
+                    width: 50%;
+                }
+                @media (min-width: 1200px) {
                     width: 42%;
                 }
                 &:focus{
@@ -675,7 +998,11 @@
                 display: inline-block;
                 font-weight: 800;
                 margin-top: 10px;
-                @media (min-width: 768px) {
+                @media (min-width: 768px){
+                    width: 50%;
+                    margin-top: 0;
+                }
+                @media (min-width: 1200px) {
                     padding: 5px 19px;
                     font-size: 17px;
                     width: 15%;
@@ -706,7 +1033,7 @@
 //review section
 .review-section{
     margin-bottom: 87px;
-    
+    margin-top: 87px;
     .tns-outer{
         position: relative;
         .tns-controls{
