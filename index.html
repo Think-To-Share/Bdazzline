@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="header-space"></div>
         <header class="page-header">
             <div class="container">
                 <div class="d-flex">
@@ -657,6 +658,11 @@
           
         <script src="./dist/js/app.js" defer></script>
         <script>
+            window.addEventListener('load', () => {
+                const header_height = document.querySelector('.page-header').offsetHeight
+                document.querySelector('.header-space').style.height=`${header_height}px`;
+            })
+
             function openSearch(ev) {
         ev.preventDefault();
         document.getElementById("myOverlay").style.display = "block";
