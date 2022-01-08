@@ -1,5 +1,5 @@
 .hero-section{
-    height: 700px;
+    // height: 700px;
     // background-image: url(../images/slider.jpg);
     background-size: cover;
     background-position:top;
@@ -37,13 +37,13 @@
             background-position: top center;
                 .slide-main{
                     align-items: center; 
-                    height:639px;
+                    height:512px;
                 .hero-text{ 
-                    padding: 253px 0;
+                    // padding: 253px 0;
                     padding-bottom: 0;
                     text-align: center;
                     @media (min-width: 992px) {
-                        padding: 200px 0;
+                        padding: 46px 0;
                         text-align: left;
                     }
                     p{
@@ -312,7 +312,7 @@
             }
         }
 
-        .right-top-left-fashion{
+        .right-top-fashion{
             // background-color: aqua;
             // min-height: 280px;
             // grid-area: rightTop;
@@ -340,7 +340,7 @@
             //     display: block;
             //     padding-left: 13px;
             // }
-            grid-area: rightTopLeft;
+            grid-area: rightTop;
             min-height: 280px;
 
             .slides2 {
@@ -407,12 +407,11 @@
                 
             }
         }
-        .right-top-right-fashion{
-            // background-color: aqua;
+        .right-bottom-fashion{
             // min-height: 280px;
-            // grid-area: rightTop;
-            // @include fashion_image_section('../images/fashion2.jpg');
-            
+            // grid-area: rightBottom;
+            // @include fashion_image_section('../images/fashion3.jpg');
+
             // .fontlayer{
             //     top: 0;
             //     left: 0;
@@ -426,195 +425,13 @@
             //     .fashion-text{
             //         padding-left: 10px;
             //     }
+              
             // }
-            // a{
-            //     color: #fff;
-            //     text-decoration: none;
-            //     text-align: left;
-            //     width: 100%;
-            //     display: block;
-            //     padding-left: 13px;
-            // }
-            grid-area: rightTopRight;
+
+            grid-area: rightBottom;
             min-height: 280px;
 
             .slides3 {
-                .slide {
-                    .slide-main {
-                        @include fashion_image_section;
-
-                        .fontlayer {
-                            bottom: 30px;
-                            right: 15px;
-                        }
-                    }
-                }
-            }
-
-            .tns-outer {
-                position: relative;
-
-                .tns-nav {
-                    position: absolute;
-                    left: 50%;
-                    bottom: 10px;
-                    transform: translateX(-50%);
-                    text-align: center;
-                    z-index: 5;
-
-                    button {
-                        background: transparent;
-                        border: 1px solid #fff;
-                        box-shadow: none;
-                        outline: none;
-                        padding: 5px;
-                        margin: 0 3px;
-                        border-radius: 50%;
-                        transition: all 0.12s ease-in-out;
-
-                        &:first-child {
-                            margin-left: 0;
-                        }
-
-                        &:last-child {
-                            margin-right: 0;
-                        }
-
-                        &.tns-nav-active {
-                            background: #fff;
-                        }
-
-                        &:hover {
-                            opacity: 0.8;
-                        }
-                    }
-                }
-            }
-            a{
-                color: #fff;
-                text-decoration: none;
-                text-align: center;
-                width: 100%;
-                display: block;
-                i{
-                    vertical-align: middle;
-                }
-                
-            }
-        }
-        .right-bottom-fashion{
-            // min-height: 280px;
-            // grid-area: rightBottom;
-            // @include fashion_image_section('../images/fashion3.jpg');
-
-            // .fontlayer{
-            //     top: 0;
-            //     left: 0;
-            //     width: 100%;
-            //     height: 100%;
-
-            //     .fashion-heading{
-            //         padding:84px 10px;
-            //         padding-bottom: 0;
-            //     }
-            //     .fashion-text{
-            //         padding-left: 10px;
-            //     }
-              
-            // }
-
-            grid-area: rightBottomleft;
-            min-height: 280px;
-
-            .slides4 {
-                .slide {
-                    .slide-main {
-                        @include fashion_image_section;
-
-                        .fontlayer {
-                            bottom: 30px;
-                            right: 15px;
-                        }
-                    }
-                }
-            }
-
-            .tns-outer {
-                position: relative;
-
-                .tns-nav {
-                    position: absolute;
-                    left: 50%;
-                    bottom: 10px;
-                    transform: translateX(-50%);
-                    text-align: center;
-                    z-index: 5;
-
-                    button {
-                        background: transparent;
-                        border: 1px solid #fff;
-                        box-shadow: none;
-                        outline: none;
-                        padding: 5px;
-                        margin: 0 3px;
-                        border-radius: 50%;
-                        transition: all 0.12s ease-in-out;
-
-                        &:first-child {
-                            margin-left: 0;
-                        }
-
-                        &:last-child {
-                            margin-right: 0;
-                        }
-
-                        &.tns-nav-active {
-                            background: #fff;
-                        }
-
-                        &:hover {
-                            opacity: 0.8;
-                        }
-                    }
-                }
-            }
-            a{
-                color: #fff;
-                text-decoration: none;
-                text-align: center;
-                width: 100%;
-                display: block;
-                i{
-                    vertical-align: middle;
-                }
-                
-            }
-        }
-        .right-bottom-fashion{
-            // min-height: 280px;
-            // grid-area: rightBottom;
-            // @include fashion_image_section('../images/fashion3.jpg');
-
-            // .fontlayer{
-            //     top: 0;
-            //     left: 0;
-            //     width: 100%;
-            //     height: 100%;
-
-            //     .fashion-heading{
-            //         padding:84px 10px;
-            //         padding-bottom: 0;
-            //     }
-            //     .fashion-text{
-            //         padding-left: 10px;
-            //     }
-              
-            // }
-
-            grid-area: rightBottomright;
-            min-height: 280px;
-
-            .slides5 {
                 .slide {
                     .slide-main {
                         @include fashion_image_section;
