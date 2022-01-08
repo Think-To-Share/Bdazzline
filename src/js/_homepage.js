@@ -129,4 +129,16 @@ if (document.querySelector('.trend-section')) {
     })
 }
 
+
+if (document.querySelector('.top-bar')) {
+    tns({
+        container: '.top-bar .slides',
+        items: 1,
+        nav: false,
+        autoplay: true,
+        controls:false,
+        autoplayTimeout:3000,
+        autoplayButtonOutput: false,
+    })
+}
 // GLightbox({});
