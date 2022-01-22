@@ -1,0 +1,102 @@
+.discount-popup-overlay {
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    opacity: 0.5;
+}
+
+.discount-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    z-index: 9999;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+
+    .popup-main {
+        display: flex;
+        justify-content: center;
+
+        .image-side {
+            width: 30%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .content-side {
+            width: 70%;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+
+            .heading {
+                font-family: $secondary-font;
+                font-size: 3.5em;
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .sub-heading {
+                font-size: 1.3em;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            form {
+                input {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    outline: none;
+                }
+
+                button[type="submit"] {
+                    width: 100%;
+                    background-color: #222;
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+
+            .dissmiss-link {
+                font-family: $secondary-font;
+                font-weight: 700;
+                display: inline-block;
+                font-size: 1.2em;
+                text-align: center;
+                margin-top: 20px;
+                color: #222;
+                cursor: pointer;
+            }
+
+            .btn-close {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+        }
+
+    }
+}
