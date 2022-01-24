@@ -13,4 +13,4 @@ try {
 
 setTimeout(() => {
     new DiscountPopup().show()
-}, 80000)
+}, 8000)
