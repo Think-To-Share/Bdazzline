@@ -11,6 +11,14 @@ try {
     console.error(e)
 }
 
-setTimeout(() => {
-    new DiscountPopup().show()
-}, 8000)
+// setTimeout(() => {
+//     new DiscountPopup().show()
+// }, 8000)
+ 
+let isPopupClosed = window.localStorage.getItem('isPopupClosed');
+
+if(!isPopupClosed){
+    setTimeout(() => {
+        new DiscountPopup().show()
+    }, 8000)
+}

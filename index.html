@@ -28,6 +28,28 @@
                             </li>
                             <li>
                                 <a href="#">GIFTS</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li>
+                                        <a href="#">Lorem ipsum</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Lorem ipsum</a></li>
+                                            <li>
+                                                <a href="#">Lorem ipsum</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="#">Lorem ipsum</a></li>
+                                                    <li><a href="#">Lorem ipsum</a></li>
+                                                    <li><a href="#">Lorem ipsum</a></li>
+                                                    <li><a href="#">Lorem ipsum</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Lorem ipsum</a></li>
+                                            <li><a href="#">Lorem ipsum</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="#">TYPE</a>
@@ -42,8 +64,14 @@
                     </div>
                     <div class="menu-icon">
                         <ul>
-                            <li>
+                            <!-- <li>
                                 <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                            </li> -->
+                            <li class="cart-bag">
+                                <a href="#">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <span class="cart-number"> 0 </span>
+                                </a>
                             </li>
                             <li>
                                 <a href="#" onclick="openSearch(event)"><i class="fas fa-search"></i></a>
@@ -682,13 +710,13 @@
             })
 
             function openSearch(ev) {
-        ev.preventDefault();
-        document.getElementById("myOverlay").style.display = "block";
-      }
+                ev.preventDefault();
+                document.getElementById("myOverlay").style.display = "block";
+            }
       
-      function closeSearch() {
-        document.getElementById("myOverlay").style.display = "none";
-      }
+            function closeSearch() {
+                document.getElementById("myOverlay").style.display = "none";
+            }
         </script>
     </body>
 </html>

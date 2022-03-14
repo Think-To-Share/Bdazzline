@@ -8,15 +8,12 @@ class DiscountPopup {
     show() {
         this.addOverlay();
         this.showPopup();
-
-        console.log('show');
     }
 
     hide() {
         this.removeOverlay();
         this.hidePopup();
-
-        console.log('hide');
+        this.setCloseState();
     }
 
     registerEvents() {
@@ -64,6 +61,10 @@ class DiscountPopup {
 
         this.overlayElement.remove();
         this.overlayElement = null;
+    }
+
+    setCloseState(){
+        window.localStorage.setItem('isPopupClosed',true)
     }
 }
 
