@@ -10,7 +10,7 @@ if (document.querySelector('.hero-section')) {
         // controlsContainer: '.hero-section .testimonial-nav',
         autoplay: true,
         controls:false,
-        autoplayTimeout:5000,
+        autoplayTimeout:10000,
         autoplayButtonOutput: false,
         responsive: {
             768:{
